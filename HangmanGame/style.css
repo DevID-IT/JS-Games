@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.game {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(120, 216, 187);
+}
+
+.game__title {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 34px;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20;
+  min-height: 350px;
+}
+.game__image {
+  max-width: 450px;
+  height: 280px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  margin-right: 50px;
+}
+.game__image img {
+  width: 100%;
+  /* height: 100%; */
+}
+.game__introdution {
+  width: 50%;
+  padding: 15px;
+  text-align: center;
+}
+.game__alphabet {
+  display: none;
+  flex-basis: 40%;
+  flex-wrap: wrap;
+}
+
+.introdution__title {
+  font-size: 24px;
+  text-align: center;
+}
+.introdution__start {
+  top: 20px;
+  width: 200px;
+  padding: 10px;
+  margin: 40px auto 0;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 20px;
+  outline: 0;
+  box-shadow: 0 0 10px #000;
+}
+.introdution__start:hover {
+  background-color: rgb(82, 78, 78);
+}
+.introdution__start:active {
+  box-shadow: 0 0 5px #000;
+  transform: scale(0.95);
+}
+.introdution__category-item {
+  width: 30%;
+  max-width: 300px;
+  text-align: center;
+  height: 20;
+  font-size: 1.5em;
+  color: #fff;
+  margin: 2vh auto;
+  cursor: pointer;
+  list-style: none;
+  height: 45px;
+  padding: 10px;
+  transition: 1s;
+}
+.introdution__category-list li:hover {
+  margin: 2vh auto;
+  text-align: center;
+  color: #000;
+  font-weight: 700;
+  background-color: rgb(24, 185, 32);
+  width: 30%;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #000;
+}
+.introdution__category-list li:active {
+  box-shadow: 0 0 5px #000;
+  transform: scale(0.95);
+}
+.letter {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border: 3px solid gray;
+  font-size: 20px;
+  line-height: 35px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.letter:hover {
+  background-color: #222;
+  color: white;
+  border: 3px solid white;
+}
+.game__attempts {
+  position: absolute;
+  bottom: 0;
+  display: sticky;
+  font-size: 25px;
+  padding: 10px 20px;
+  width: 400px;
+  text-align: center;
+  background-color: rgb(103, 204, 9);
+  border-radius: 40px 40px 0 0;
+}
+
+.final-description {
+  padding: 5px;
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.reset {
+  display: block;
+  width: 30%;
+  padding: 10px;
+  margin: 20px auto;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 20px;
+  outline: 0;
+  box-shadow: 0 0 10px #000;
+}
+
+.reset:hover {
+  background-color: rgb(82, 78, 78);
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 1000px) {
+  .letter {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lobster, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  background-color: rgb(133, 133, 133);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgb(255, 196, 4), rgb(200, 255, 111));
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.header {
+  text-align: center;
+  width: 100%;
+}
+
+.header__title {
+  text-align: center;
+  padding: 10px 10px 0;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.header__description {
+  text-align: center;
+  margin: 5px 0 0;
+  letter-spacing: 2px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 125px);
+  grid-template-rows: repeat(4, 125px);
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.card {
+  width: 125px;
+  height: 125px;
+  margin: 3px;
+  background-image: url("pictures/detective.png");
+  background-size: 120px 120px;
+  background-position: center;
+  border: 4px solid #51c8b2;
+  border-radius: 4px;
+  cursor: pointer;
+  filter: brightness(80%);
+  transition: all 0.3s ease-in-out;
+}
+
+.card--active {
+  border: 4px solid #e9b64a;
+  filter: brightness(100%);
+}
+.game-counter {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  letter-spacing: 2px;
+  background-color: rgb(255, 187, 0);
+  width: 280px;
+  height: 70px;
+  border-radius: 100% 100% 0 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-weight: bold;
+  line-height: 1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  font-size: 2rem;
+  padding: 10px 10px 20px;
+}
+.game-counter__span {
+  margin-left: 5px;
+}
+.game-board--done {
+  display: block;
+  text-align: center;
+  position: absolute;
+  margin-top: -50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.reset-button {
+  margin-top: 40px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: green;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #13ce5b;
+  border-radius: 4px;
+  transition-duration: 1s;
+  box-shadow: 0 0 5px #030303;
+}
+.reset-button:hover {
+  transform: scale(1.1);
+}
+.game-board-win,
+.game-board-description {
+  padding: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .game-board {
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(4, 70px);
+    grid-gap: 10px;
+  }
+  .card {
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+  }
+}

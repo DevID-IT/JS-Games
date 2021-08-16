@@ -1,0 +1,158 @@
+$size-small: 320px;
+$size-large: 760px;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(85, 74, 74, 0.705);
+}
+.container {
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: rgba(248, 248, 248, 0.705);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  @media screen and (max-width: $size-large) {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+.windows {
+  display: flex;
+  margin-bottom: 3vh;
+  &__element {
+    background-color: #fff;
+    height: 35vh;
+    flex-grow: 1;
+    margin: 10px;
+    border: 3px solid #333;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media screen and (max-width: $size-large) {
+      height: 20vh;
+    }
+  }
+}
+
+.starter {
+  position: relative;
+  &__input {
+    height: 50px;
+    font-size: 24px;
+    border: 2px solid #000;
+    padding: 0 20px;
+    width: 300px;
+    border-radius: 5px;
+    position: absolute;
+    left: 20px;
+    opacity: 0.9;
+    @media screen and (max-width: $size-large) {
+      width: 40%;
+      height: 40px;
+      font-size: 20px;
+      padding: 0 10px;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  &__button {
+    position: absolute;
+    right: 30px;
+    height: 50px;
+    font-size: 24px;
+    background-color: #000;
+    color: #fff;
+    width: 200px;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.5s;
+    box-shadow: 5px 5px 10px #000;
+    outline: none;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      top: 3px;
+      right: 28px;
+      box-shadow: 2px 2px 10px #000;
+    }
+    @media screen and (max-width: $size-large) {
+      width: 40%;
+      height: 40px;
+      display: inline-block;
+      font-size: 20px;
+    }
+  }
+}
+.results {
+  width: 50%;
+  border: 4px solid #000;
+  margin: 100px auto 10px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  position: relative;
+  &--win {
+    border: 2px solid rgb(5, 143, 28);
+    box-shadow: 5px 5px 10px #000;
+    color: rgb(5, 143, 28);
+    border: 4px solid rgb(5, 143, 28);
+    box-shadow: 0 0 10px #000;
+  }
+  &--loss {
+    border: 2px solid rgb(206, 21, 8);
+    box-shadow: 5px 5px 10px #000;
+    color: rgb(206, 21, 8);
+    border: 4px solid rgb(206, 21, 8);
+    box-shadow: 0 0 10px #000;
+  }
+
+  &__desctription {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__all-games,
+  &__actual-money {
+    margin-bottom: 10px;
+  }
+  &__all-games:last-child {
+    margin-bottom: 0;
+  }
+  &__wallet,
+  &__game-counter,
+  &__wins-counter,
+  &__losses-counter {
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    width: 100px;
+    border: 1px solid black;
+  }
+
+  @media screen and (max-width: $size-large) {
+    margin: 120px auto 20px;
+    width: 80%;
+    font-size: 16px;
+  }
+}

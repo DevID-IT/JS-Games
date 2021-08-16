@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Machine</title>
+    <meta name="description" content="Game machine - win a fortune">
+    <meta name="keywords" content="game, machine, game machine">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.min.css" rel="stylesheet"></link>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Game Machine</h1>
+        <section class="windows">
+            <div class="windows__element"></div>
+            <div class="windows__element"></div>
+            <div class="windows__element"></div>
+        </section>
+        <section class="starter">
+            <input type="number" class="starter__input" placeholder="Write your rate">
+            <button class="starter__button">Twist!</button>
+        </section>
+        <section class="results">
+            <div class="results__desctription"></div>
+            <div class="results__actual-money">You have: <span class="results__wallet"></span></div>
+            <div class="results__all-games">Games: <span class="results__game-counter"></span></div>
+            <div class="results__all-games">Wins: <span class="results__wins-counter"></span></div>
+            <div class="results__all-games">Lost: <span class="results__losses-counter"></span></div>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

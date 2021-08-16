@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rock Paper Scissors</title>
+        <meta name="description" content="Rock Paper Scissors game is very atractive for free time">
+        <meta name="keywords" content="Rock, Paper, Scissors, Rock Paper Scissors, game, free tim">
+        <meta name='viewport' content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="style.css" rel="stylesheet"></link>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>Rock Paper Scissors</h1>
+            </header>
+            <div class="playboard">
+                <h3 class="playboard-title">Choose a hand:</h3>
+                <div class="hand_items">
+                <div class="hand" id="rock">
+                    <img src="https://cdn.rawgit.com/aronnax77/whatsdev_tutorials/ef296e2b/images/rock.png"  alt="rock" title="Rock"> 
+                </div>
+                <div class="hand" id="paper">
+                    <img src="https://cdn.rawgit.com/aronnax77/whatsdev_tutorials/ef296e2b/images/paper.png"  alt="paper" title="Paper">
+                </div>
+                <div class="hand" id="scissors">
+                    <img src="https://cdn.rawgit.com/aronnax77/whatsdev_tutorials/ef296e2b/images/scissors.png"  alt="scissors" title="Scissors">
+                </div>
+            </div>
+                <button>LET'S PLAY!</button>
+            </div>
+            <div class="result-container">
+                <div class="actualresult">
+                    <h3>Game result</h3>
+                    <p>Your choice: <span data-summary='user-choice'></span></p>
+                    <p>Computer choice: <span data-summary='comp-choice'></span></p>
+                    <div class="result">
+                    </div>
+                </div>
+                <div class="allresults">
+                    <h3>All games result</h3>
+                    <div class="score-board">
+                        <div id="user-label" class="badge">user</div>
+                        <div id="comp-label" class="badge">comp</div>
+                        <span id="user-score">0</span> : <span id="comp-score">0</span>
+                    </div>
+                    <p class="draws">Draws: <span>0</span></p>
+                    <div class="gamenumber">Number of games: <span>0</span></div>
+                </div>
+            </div>
+            <div class='popup'>
+                <p>You didn't choose a hand!</p>
+                <p>Please, do it if you want play game.</p>
+                <button class="close">Close</button>
+            </div>
+        </div>
+    <script src="main.js"></script>
+    </body>
+</html>
