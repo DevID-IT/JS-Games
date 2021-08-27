@@ -9,10 +9,10 @@
 
 This is a repository dedicated to medium and small projects. Among other things, it is here:
 
-- Hangman game https://davidjr007.github.io/JavaScript-Projects/HangmanGame
-- Card game https://davidjr007.github.io/JavaScript-Projects/CardGame
-- Rock Paper Scissors Game https://davidjr007.github.io/JavaScript-Projects/RockPaperScissors
-- Game Machine https://davidjr007.github.io/JavaScript-Projects/GameMachine
+- Hangman game https://devid-it.github.io/JS-Games/HangmanGame
+- Card game https://devid-it.github.io/JS-Games/CardGame
+- Rock Paper Scissors Game https://devid-it.github.io/JS-Games/RockPaperScissors
+- Game Machine https://devid-it.github.io/JS-Games/GameMachine
 
 
 All description about this projects you can find in in the relevant README.md files
